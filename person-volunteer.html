@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Volcan</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    
+    .navbar-default .navbar-nav>li>a {
+		color: #337ab7;
+    }
+    
+    .navbar-default .navbar-nav>li>a:hover {
+		text-decoration: underline;
+    }
+    
+    .nomargin{
+	    margin: 0 0 0 0;	  
+    }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="logged-in.html">Volcan Logo</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="mandates.html">Mandates</a>
+                    </li>
+                    <li class="active">
+                        <a href="people.html">People</a>
+                    </li>
+                    <li>
+                        <a href="#">Upload</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+			        <li><p class="navbar-text">Signed in as <a href="#">Sam Novak</a></p></li>
+			        <li><p class="navbar-text">|</p></li>		        
+			        <li><a href="index.html">Logout</a></li>			        
+			    </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="container">		
+        <div class="row">
+	        <ol class="breadcrumb">
+				<li><a href="logged-in.html">Home</a></li>
+				<li><a href="people.html">People</a></li>
+				<li><a href="person-list-volunteers.html">Volunteer</a></li>
+				<li class="active">First Last Name</li>
+			</ol>
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="col-lg-12">
+						<small><a href="person-list-volunteers.html"> << Back </a></small><br>
+						<h1 class="nomargin">First Last Name</h1>
+						<h4>Volunteer Position Title</h4>
+						<table class="table">							      					
+				  		<tbody>
+					  		<tr>
+						  		<td style="border: none;"><b>Current Location: </b>City, Country<br><b>Home Location:</b> City, Country</td>
+						  		<td style="border: none;"><b>Email: </b><u>first.last@volcan.ca</u><br><b>Phone: </b> +12 55 555 555<br><b>Skype: </b> firstlastname</td>
+						  		<td style="border: none;"><b>Languages:</b><br>English, French, Dutch, Swahili</td>
+					  		</tr>
+				  		</tbody>
+						</table>					
+						<p>[User enters bio about themselves including experience, expertise etc.]</p>
+					</div>
+										
+            		<div class="col-lg-12"><br></div>
+            		<div class="col-lg-12">                
+	                	<h4>First Name's Feed</h4>
+						<input type="text" name="search" class="form-control" placeholder="Search / Filter Posts"/><br>
+						<select>
+						  <option selected>Most Recent</option>
+						  <option>Most Active</option>
+						  <option>Least Active</option>				  
+						</select>
+						<br><br>
+						<ul>
+			                <li>
+		                    	<h4 class="nomargin">Post title goes here</h4>
+		                    	<p><small><a href="#">Mandates</a> > <a href="#">Category</a> > <a href="project.html">Project Title</a></small><br>
+		                    	<small>Posted by <a href="person.html">First Last</a> @ 12:00 am on July 20th, 2015</small><br>
+		                    	[Excerpt of content from post] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua ...
+		                    	<a href="#" data-toggle="modal" data-target="#mypost"><b>Read More</b></a>
+		                    	</p>
+		                    </li>
+		                    <li>
+		                    	<h4 class="nomargin">Post title goes here</h4>
+		                    	<p><small><a href="#">Mandates</a> > <a href="#">Category</a> > <a href="project.html">Project Title</a></small><br>
+		                    	<small>Posted by <a href="person.html">First Last</a> @ 12:00 am on July 20th, 2015</small><br>
+		                    	[Excerpt of content from post] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua ...
+		                    	<a href="#" data-toggle="modal" data-target="#mypost"><b>Read More</b></a>
+		                    	</p>
+		                    </li>
+		                    <li>
+		                    	<h4 class="nomargin">Post title goes here</h4>
+		                    	<p><small><a href="#">Mandates</a> > <a href="#">Category</a> > <a href="project.html">Project Title</a></small><br>
+		                    	<small>Posted by <a href="person.html">First Last</a> @ 12:00 am on July 20th, 2015</small><br>
+		                    	[Excerpt of content from post] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua ...
+		                    	<a href="#" data-toggle="modal" data-target="#mypost"><b>Read More</b></a>
+		                    	</p>
+		                    </li>
+		                    <li>
+		                    	<h4 class="nomargin">Post title goes here</h4>
+		                    	<p><small><a href="#">Mandates</a> > <a href="#">Category</a> > <a href="project.html">Project Title</a></small><br>
+		                    	<small>Posted by <a href="person.html">First Last</a> @ 12:00 am on July 20th, 2015</small><br>
+		                    	[Excerpt of content from post] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua ...
+		                    	<a href="#" data-toggle="modal" data-target="#mypost"><b>Read More</b></a>
+		                    	</p>
+		                    </li>		                    
+		                </ul>		                                      
+            		</div>	
+				</div>
+				<div class="col-lg-4">
+            		<div class="col-lg-12"><br></div>
+            		<div class="col-lg-12" style="background-color: #f4f4f4">
+		                <h4>Current Assigned Project</h4>
+		                <ul>
+		                    <li><a href="#">Project Title Here</a><br>
+		                    	<small>Short project tagline descriptions<br>
+								<a href="#">Category 1</a>, <a href="#">Project Director</a></small> <br><br>                   
+		                    </li>		                                      
+		                </ul>
+		                <h4>Subscribed Mandates</h4>
+		                <ul>
+		                    <li><a href="#">Project Title Here</a><br>
+		                    	<small>Short project tagline descriptions<br>
+								<a href="#">Category 1</a>, <a href="#">Project Director</a></small> <br><br>                   
+		                    </li>
+		                    <li><a href="#">Project Title Here</a><br>
+		                    	<small>Short project tagline descriptions<br>
+								<a href="#">Category 1</a>, <a href="#">Project Director</a></small> <br><br>                   
+		                    </li>
+		                    <li><a href="#">Project Title Here</a><br>
+		                    	<small>Short project tagline descriptions<br>
+								<a href="#">Category 1</a>, <a href="#">Project Director</a></small> <br><br>                   
+		                    </li>		                                      
+		                </ul>
+					</div>
+					<div class="col-lg-12"><br></div>
+		            <div class="col-lg-12" style="background-color: #f4f4f4">
+		                <h4>People Related to First Name</h3>
+		                <ul>
+		                    <li><a href="#">Sam Smith</a><br>                    	
+								<small><a href="#">Volcan</a>, Project Director, Toronto</small> <br><br>                   
+		                    </li>
+		                    <li><a href="#">Dolly Parton</a><br>                    	
+								<small><a href="#">Volcan</a>, Volunteer Coordinator, Toronto</small> <br><br>                   
+		                    </li> 
+		                    <li><a href="#">Michael Jackson</a><br>                    	
+								<small><a href="#">NGO Name</a>, Project Lead, Zambia</small> <br><br>                   
+		                    </li>
+		                    <li><a href="#">Pete Seeger</a><br>                    	
+								<small><a href="#">Volcan</a>, Volunteer, Zambia</small> <br><br>                   
+		                    </li>                      
+		                </ul>
+						<u>6 More People >></u>
+		            </div>
+		            <div class="col-lg-12"><br></div>          	            
+				</div>
+							
+			</div>	
+            
+            
+            
+        </div>
+        <!-- /.row -->
+		
+    </div>
+    <div class="modal fade" id="mypost" tabindex="-1" role="dialog" aria-labelledby="mypostlabel" aria-hidden="true">
+	    <div class="vertical-alignment-helper" style="margin-top: 250px;">
+	        <div class="modal-dialog vertical-align-center">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+	
+	                    </button>
+	                     <h4 class="modal-title" id="mypostlabel">Post title goes here</h4>
+	                     Posted By: <a href="person.html">First Last</a> @ 12:00am on July 20th, 2015
+	
+	                </div>
+	                <div class="modal-body">
+		            	<p>[This is where the full content of the post goes] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		            	<small>Attachments</small>
+		            	<p><b>Field Assessment - June 2015.pdf</b>&nbsp;&nbsp;<a href="#">Download</a></p>
+	                </div>
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	                    <a href="project.html"class="btn btn-primary">Go to Project</a>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+    <!-- /.container -->
+	<footer class="footer" style="background-color: #e7e7e7; margin-top: 20px;min-height: 80px;line-height: 80px;">
+      <div class="container text-center">
+        <div class="col-lg-12"><p>Volcan - Copyright 2015 - <u>Privacy Policy</u> | <u>Terms of Use</u></p></div>
+      </div>
+    </footer>
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

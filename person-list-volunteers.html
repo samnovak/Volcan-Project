@@ -25,6 +25,10 @@
 		color: #337ab7;
     }
     
+    .navbar-default .navbar-nav>li>a:hover {
+		text-decoration: underline;
+    }
+    
     .nomargin{
 	    margin: 0 0 0 0;	  
     }
@@ -87,37 +91,100 @@
 					<li><a href="people.html">People</a></li>
 					<li class="active">Volunteers</li>
 				</ol>
-            <div class="col-lg-8">
+            <div class="col-lg-8 center-block">
                 <small><a href="people.html"> << Back </a></small><br>
                 <h2 class="nomargin">Volunteers</h2>
                 <br>
-                <ul class="nav nav-pills nav-justified text-center">
-				  <li role="presentation">
-				  	<h4><a href="person.html">Person</a></h4>
-				  	<p>Tagline description of this person</p>
-				  </li>
-				  <li role="presentation">
-				  	<h4><a href="person.html">Person</a></h4>
-				  	<p>Tagline description of this person</p>
-				  </li>
-				  <li role="presentation">
-				  	<h4><a href="person.html">Person</a></h4>
-				  	<p>Tagline description of this person</p>
-				  </li><br>
-				  <li role="presentation">
-				  	<h4><a href="person.html">Person</a></h4>
-				  	<p>Tagline description of this person</p>
-				  </li>
-				  <li role="presentation">
-				  	<h4><a href="person.html">Person</a></h4>
-				  	<p>Tagline description of this person</p>
-				  </li>
-				  <li role="presentation">
-				  	<h4><a href="person.html">Person</a></h4>
-				  	<p>Tagline description of this person</p>
-				  </li>
-				</ul>
-                
+                Sort By:
+                <select class="form-control input-sm" style="width:20%;display: inline;">
+				  <option selected>Alphabetical</option>
+				  <option>Recently Added</option>
+				  <option>Most Active</option>
+				</select>
+				&nbsp;
+				Filter:
+				&nbsp;<input type="text" name="filter" class="form-control input-sm" style="width:50%;display: inline;" placeholder="Filter / Search"> 
+				<table class="table">							      
+					<thead>
+						<tr>
+						  <th>Name</th>
+						  <th>Volunteer Position</th>
+						  <th>Project Assignment</th>
+						  <th>Language(s)</th>
+						  <th>Status</th>
+						</tr>
+					</thead>
+			  		<tbody>
+				  		<tr>
+					  		<td><a href="person-volunteer.html">First Last Name</a></td>
+					  		<td>Volunteer Title</td>
+					  		<td><a href="project.html">Project Title</a><br><small>City, Country</small></td>
+					  		<td>EN, NL, DE</td>
+					  		<td>Volunteer Status</td>
+				  		</tr>
+				  		<tr>
+					  		<td><a href="person-volunteer.html">First Last Name</a></td>
+					  		<td>Volunteer Title</td>
+					  		<td><a href="project.html">Project Title</a><br><small>City, Country</small></td>
+					  		<td>EN, FR</td>
+					  		<td>Volunteer Status</td>
+				  		</tr>
+				  		<tr>
+					  		<td><a href="person-volunteer.html">First Last Name</a></td>
+					  		<td>Volunteer Title</td>
+					  		<td><a href="project.html">Project Title</a><br><small>City, Country</small></td>
+					  		<td>EN</td>
+					  		<td>Volunteer Status</td>
+				  		</tr>
+				  		<tr>
+					  		<td><a href="person-volunteer.html">First Last Name</a></td>
+					  		<td>Volunteer Title</td>
+					  		<td><a href="project.html">Project Title</a><br><small>City, Country</small></td>
+					  		<td>EN, DE</td>
+					  		<td>Volunteer Status</td>
+				  		</tr>
+				  		<tr>
+					  		<td><a href="person-volunteer.html">First Last Name</a></td>
+					  		<td>Volunteer Title</td>
+					  		<td><a href="project.html">Project Title</a><br><small>City, Country</small></td>
+					  		<td>EN, SW</td>
+					  		<td>Volunteer Status</td>
+				  		</tr>
+				  		<tr>
+					  		<td><a href="person-volunteer.html">First Last Name</a></td>
+					  		<td>Volunteer Title</td>
+					  		<td><a href="project.html">Project Title</a><br><small>City, Country</small></td>
+					  		<td>EN, FR, NL</td>
+					  		<td>Volunteer Status</td>
+				  		</tr>
+				  		<tr>
+					  		<td><a href="person-volunteer.html">First Last Name</a></td>
+					  		<td>Volunteer Title</td>
+					  		<td><a href="project.html">Project Title</a><br><small>City, Country</small></td>
+					  		<td>EN, TS</td>
+					  		<td>Volunteer Status</td>
+				  		</tr>
+			  		</tbody>
+				</table> 
+				<div class="col-lg-12 text-center">
+					<ul class="pagination">
+					    <li>
+					      <a href="#" aria-label="Previous">
+					        <span aria-hidden="true">&laquo;</span>
+					      </a>
+					    </li>
+					    <li><a href="#">1</a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#">3</a></li>
+					    <li><a href="#">4</a></li>
+					    <li><a href="#">5</a></li>
+					    <li>
+					      <a href="#" aria-label="Next">
+					        <span aria-hidden="true">&raquo;</span>
+					      </a>
+					    </li>
+					 </ul>
+				</div>              
             </div>
             <div class="col-lg-4">
             	<div class="col-lg-12" style="background-color: #f4f4f4; margin-top: 15px;">
@@ -147,7 +214,7 @@
     <!-- /.container -->
 	<footer class="footer" style="background-color: #e7e7e7; margin-top: 20px;min-height: 80px;line-height: 80px;">
       <div class="container text-center">
-        <div class="col-lg-12"><p>Volcan - Copyright 2015 - Privacy Policy | Terms of Use</p></div>
+        <div class="col-lg-12"><p>Volcan - Copyright 2015 - <u>Privacy Policy</u> | <u>Terms of Use</u></p></div>
       </div>
     </footer>
 
